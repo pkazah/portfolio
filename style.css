@@ -7,12 +7,6 @@
     
 /* NAVIGATION */
 
-body {
-	margin: 0;
-	background: #222;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 800;
-}
 
 .container {
 	width: 80%;
@@ -20,8 +14,9 @@ body {
 }
 
 header {
-  background: #55d6aa;
+  background: rgb(117, 189, 218);
   text-align: center;
+  height: 64px;
 }
 
 header::after {
@@ -33,6 +28,8 @@ header::after {
 .logo {
   float: left;
   padding: 10px 0;
+  color: rgb(255, 255, 255);
+  font-size: xx-large;
 }
 
 nav {
@@ -83,35 +80,51 @@ nav a:hover::before {
 
 /* NAVIGATION */
 
-/*Intro styling */
+/*HERO styling */
 
 body {
+    background-image: url(images/body.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 	margin: 0;
-	background: #222;
 	font-family: 'Work Sans', sans-serif;
 	font-weight: 800;
     
 }
-.intro {
-    display: flex;
-    background-color: rgb(32, 32, 145);
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: ubuntu,sans-serif;
-}
 
-.text-1 {
-    font-size: 42pt;
+
+.welcome-text{
+    font-size: 24pt;
     position: relative;
-    margin-top: 10%;
-    margin-left: 10%;
+    text-align: left;
+    float: left;
+    margin-top: 12%;
+    margin-left: 15%;
+}
+.h2 {
+    font-size: 11pt;
 }
 
-/* Intro styling */
 
+#portfolio {
+    width: 200px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+}
 
+/* Hero styling */
 
-
+.footer {
+  position: relative;
+  bottom: auto;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
