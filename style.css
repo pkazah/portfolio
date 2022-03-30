@@ -5,7 +5,7 @@
 
   }
     
-/* NAVIGATION */
+/* NAVIGATION START */
 
 
 .container {
@@ -17,6 +17,8 @@ header {
   background: rgb(117, 189, 218);
   text-align: center;
   height: 64px;
+  font-family: sans-serif;
+ 
 }
 
 header::after {
@@ -27,7 +29,7 @@ header::after {
 
 .logo {
   float: left;
-  padding: 10px 0;
+  padding: 15px 0;
   color: rgb(255, 255, 255);
   font-size: xx-large;
 }
@@ -78,53 +80,133 @@ nav a:hover::before {
   width: 100%;
 }
 
-/* NAVIGATION */
+/* NAVIGATION END */
 
 /*HERO styling */
 
-body {
-    background-image: url(images/body.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-	margin: 0;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 800;
-    
+.hero {
+    background-image: url(images/PINK.png);
+    font-family: sans-serif;
+	font-weight: 800;  
+    height: 800px;
+    position: relative;
+    text-align: left;
 }
 
 
 .welcome-text{
-    font-size: 24pt;
-    position: relative;
-    text-align: left;
-    float: left;
-    margin-top: 12%;
-    margin-left: 15%;
-}
-.h2 {
-    font-size: 11pt;
+font-size: 22pt;
+position: absolute;
+text-align: left;
+float: left;
+margin-top: 12%;
+margin-left: 15%;
 }
 
 
-#portfolio {
-    width: 200px;
-    height: 25px;
-    background: #4E9CAF;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    line-height: 25px;
+
+.btn1 {  
+text-decoration:none ;
+color: aliceblue;
 }
 
-/* Hero styling */
+/* HERO STYLING END */
 
-.footer {
+/*ABOUT STYLING START*/
+.about {
+    margin: 0%;
+    display: flex;
+    height: 400px;
+    background-color: #fde8e2;
+border: #000;
+justify-content: center;
+}
+
+.right {
+  order: 2;
   position: relative;
-  bottom: auto;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
+  justify-content: flex-end;
+align-items: center;
+    width: 45%;
+    padding: right 40px;
+    padding-left:70px;
+    padding-right: 70px;
+    height: 90px;
+    margin:30px;
+    margin-right:30px;
+    margin-bottom: 50px;
+    line-height:2;
+    text-decoration: solid;
+
 }
+.left {
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+
+    width: 40%;
+    padding: 20px;
+    padding: left 30px;
+    padding-right: 70px;
+    height: 475px;
+    margin:30px;
+    margin-right:30px;
+    margin-bottom: 70px;
+    line-height:2;
+    background-color: fde8e2;
+}
+
+  .profile {
+    background-color: #49b1e0; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+/* ABOUT STYLING END */
+
+
+
+/* CONTACT STYLING START */
+
+.contact{
+  background-color: #fde8e2;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* CONTACT STYLING END */
