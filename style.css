@@ -5,6 +5,7 @@
 
   }
     
+  
 /* NAVIGATION START */
 
 
@@ -14,7 +15,8 @@
 }
 
 header {
-  background: rgb(117, 189, 218);
+
+  background: #00d4ff;
   text-align: center;
   height: 64px;
   font-family: sans-serif;
@@ -79,13 +81,16 @@ nav a::before {
 nav a:hover::before {
   width: 100%;
 }
-
+ .h3 {
+   font-size: xx-large;
+ }
 /* NAVIGATION END */
 
 /*HERO styling */
 
 .hero {
-    background-image: url(images/PINK.png);
+    background-image: url(images/orange.jpg);
+    object-fit: cover; /*magic*/
     font-family: sans-serif;
 	font-weight: 800;  
     height: 800px;
@@ -101,13 +106,20 @@ text-align: left;
 float: left;
 margin-top: 12%;
 margin-left: 15%;
+color: rgb(66, 159, 217);
 }
 
 
 
-.btn1 {  
-text-decoration:none ;
-color: aliceblue;
+.projects {  
+  background-color: #49b1e0; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 /* HERO STYLING END */
@@ -117,7 +129,7 @@ color: aliceblue;
     margin: 0%;
     display: flex;
     height: 400px;
-    background-color: #fde8e2;
+    background-color: #ffffff;
 border: #000;
 justify-content: center;
 }
@@ -127,6 +139,7 @@ justify-content: center;
   position: relative;
   justify-content: flex-end;
 align-items: center;
+flex-direction: column;
     width: 45%;
     padding: right 40px;
     padding-left:70px;
@@ -167,6 +180,17 @@ align-items: center;
     font-size: 16px;
   }
 
+  .numbered-heading {
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: clamp(26px,5vw,var(--fz-heading));
+    white-space: nowrap;
+  }
+
 /* ABOUT STYLING END */
 
 
@@ -174,7 +198,12 @@ align-items: center;
 /* CONTACT STYLING START */
 
 .contact{
-  background-color: #fde8e2;
+  background-color: #EFF4F9;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -202,11 +231,23 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
+.container{
+  
+ 
 }
 
 /* CONTACT STYLING END */
+
+
+.footer {
+  padding: 2rem 0;
+  margin: 0;
+box-sizing: border-box;
+font-family: inherit;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}
